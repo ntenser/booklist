@@ -5,6 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+puts "beginning seed file"
+
+Book.destroy_all
+
+
 Book.create!(title: "The Secret History", author: "Donna Tartt", already_read: true)
 Book.create!(title: "Why's (Poignant) Guide to Ruby", author: "Why the Lucky Stiff", already_read: true)
 Book.create!(title: "Pink Noises", author: "Tara Rodgers", already_read: false)
